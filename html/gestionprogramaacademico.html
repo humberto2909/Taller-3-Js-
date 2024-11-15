@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Programa Académico</title>
+    <link rel="stylesheet" href="../css/estilosprograma.css">
+    <script src="../js/utilidadesprograma.js"></script>
+</head>
+<body>
+    <div class="barrasuperior">
+        <img src="../recursos/imagenes/logocecar.jpeg" alt="">
+        <a href="../index.html">Inicio</a>
+        <a href="gestionestudiantes.html">Gestión de Estudiantes</a>
+        <a href="gestionprogramaacademico.html">Gestión de Programas Académicos</a>
+        <a href="gestionmatricula.html">Gestión de Matrículas</a>
+    </div>
+
+    <div class="contenedor">
+        <h2>Gestionar Programa Académico</h2>
+        <form>
+
+            <label>Código del programa</label>
+            <input type="text" id="codigoPrograma" autofocus>
+
+            <label>Nombre del programa</label>
+            <input type="text" id="nombrePrograma"> 
+
+            <label>Duración (en semestres)</label>
+            <input type="number" id="duracionPrograma"> 
+
+            <label>Modalidad</label>
+            <select id="modalidadPrograma">
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="Presencial">Presencial</option>
+                <option value="Virtual">Virtual</option>
+                <option value="Semipresencial">Semipresencial</option>
+            </select> 
+
+            <label>Fecha de inicio</label>
+            <input type="date" id="fechaInicioPrograma">
+
+            <div id="botones">
+                <button type="button" onclick="guardar()">Guardar</button>
+                <button type="button" onclick="actualizar()">Actualizar</button>
+                <button type="button" onclick="eliminar()">Eliminar</button>
+                <button type="button" onclick="consultar()">Consultar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    height: 100vh;   
+    background: url("../recursos/imagenes/cecar.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;        
+}
+
+.contenedor {
+    border: 1px solid #000;
+    padding: 10px;
+    height: 250px;
+    width: 500px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 20px;
+    background: rgba(151, 145, 145, 0.607);
+    backdrop-filter: blur(1px);
+}
+
+h2 {
+    margin: 2px;
+}
+
+button {
+    margin: 5px;
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: skyblue;
+    font-size: 17px;   
+}
+
+button:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}

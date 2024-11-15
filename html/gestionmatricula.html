@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Matrículas</title>
+    <link rel="stylesheet" href="../css/estilosmatricula.css">
+    <script src="../js/utilidadesmatricula.js"></script>
+</head>
+<body>
+    <div class="barrasuperior">
+        <img src="../recursos/imagenes/logocecar.jpeg" alt="">
+        <a href="../index.html">Inicio</a>
+        <a href="gestionestudiantes.html">Gestión de Estudiantes</a>
+        <a href="gestionprogramaacademico.html">Gestión de Programas Académicos</a>
+        <a href="gestionmatricula.html">Gestión de Matrículas</a>
+    </div>
+
+    <div class="contenedor">
+        <h2>Gestionar Matrículas</h2>
+        <form>
+
+            <label>Identificación de matrícula</label>
+            <input type="text" id="idMatricula" autofocus>
+
+            <label>Identificación del estudiante</label>
+            <input type="text" id="idEstudiante">
+
+            <label>Código del programa</label>
+            <input type="text" id="codigoPrograma">
+
+            <label>Fecha de matrícula</label>
+            <input type="date" id="fechaMatricula">
+
+            <label>Estado de la matrícula</label>
+            <select id="estadoMatricula">
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="Presencial">Presencial</option>
+                <option value="Virtual">Virtual</option>
+                <option value="Semipresencial">Semipresencial</option>
+            </select> 
+
+            <div id="botones">
+                <button type="button" onclick="guardar()">Guardar</button>
+                <button type="button" onclick="actualizar()">Actualizar</button>
+                <button type="button" onclick="eliminar()">Eliminar</button>
+                <button type="button" onclick="consultar()">Consultar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

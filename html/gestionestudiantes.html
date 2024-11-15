@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Estudiantes</title>
+    <link rel="stylesheet" href="../css/estilosestudiante.css">
+    <script src="../js/utilidadesestudiante.js"></script>
+</head>
+<body>
+    <div class="barrasuperior">
+        <img src="../recursos/imagenes/logocecar.jpeg" alt="">
+        <a href="../index.html">Inicio</a>
+        <a href="gestionestudiantes.html">Gestión de Estudiantes</a>
+        <a href="gestionprogramaacademico.html">Gestión de Programas Académicos</a>
+        <a href="gestionmatricula.html">Gestión de Matrículas</a>
+    </div>
+    <div class="contenedor">
+        <h2>Gestionar Estudiantes</h2>
+        <form id="formulario-estudiante">
+
+            <label for="id">Identificación Estudiante</label>
+            <input type="text" id="identificacion">
+
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre">
+
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="correo">
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono">
+
+            <div id="botones">
+                <button type="button" onclick="guardar()">Guardar</button>
+                <button type="button" onclick="actualizar()">Actualizar</button>
+                <button type="button" onclick="eliminar()">Eliminar</button>
+                <button type="button" onclick="consultar()">Consultar</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
